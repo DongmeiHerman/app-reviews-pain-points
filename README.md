@@ -2,7 +2,7 @@
 
 A small example that collects reviews from the **Apple App Store, Google Play and the Chrome Web Store in one run** and turns them into a pain-point report with Python.
 
-It uses the [App Store, Google Play & Chrome Web Store Reviews Scraper]({{ACTOR_URL}}) on Apify through the official [`apify-client`](https://pypi.org/project/apify-client/) package.
+It uses the [App Store, Google Play & Chrome Web Store Reviews Scraper](https://apify.com/tiandu-tech/apify-002-app-reviews) on Apify through the official [`apify-client`](https://pypi.org/project/apify-client/) package.
 
 > Apple's public review feed has been unreliable since October 2026 and may return no reviews. Google Play and Chrome Web Store work normally. The scraper reports empty Apple feeds in its run status message, which `scrape_reviews.py` prints.
 

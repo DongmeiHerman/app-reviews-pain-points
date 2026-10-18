@@ -1,0 +1,6 @@
+[
+ {"store":"google","appId":"com.example.app","country":"us","language":"en","reviewId":"g1","rating":1,"title":null,"text":"App keeps crashing after the latest update","appVersion":"2.1.0","thumbsUp":12,"reviewedAt":"2026-10-10T08:00:00Z","developerReply":null},
+ {"store":"google","appId":"com.example.app","country":"us","language":"en","reviewId":"g2","rating":5,"title":null,"text":"Works well","appVersion":"2.1.0","thumbsUp":0,"reviewedAt":"2026-10-11T08:00:00Z","developerReply":"Thanks!"},
+ {"store":"chrome","appId":"abcdefghijklmnopabcdefghijklmnop","country":null,"language":"en","reviewId":"c1","rating":2,"title":null,"text":"Too slow and uses a lot of memory","appVersion":"1.4","thumbsUp":3,"reviewedAt":"2026-10-12T08:00:00Z","developerReply":null},
+ {"store":"apple","appId":"123456789","country":"us","language":"en","reviewId":"a1","rating":1,"title":"Login broken","text":"Cannot log in to my account since the update","appVersion":"5.0","thumbsUp":7,"reviewedAt":"2026-10-12T09:00:00Z","developerReply":null}
+]

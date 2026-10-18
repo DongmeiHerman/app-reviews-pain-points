@@ -15,6 +15,9 @@ from pathlib import Path
 
 import pandas as pd
 
+pd.set_option("display.width", 200)
+pd.set_option("display.max_columns", 20)
+
 STOP = set(
     """a an the and or but if to of in on for with is it this that was are be i me my we
     you your they them have has had not no just so very app extension""".split()

@@ -14,6 +14,7 @@ import sys
 from pathlib import Path
 
 from apify_client import ApifyClient
+from apify_client.errors import ApifyApiError
 
 ACTOR_ID = "tiandu-tech/apify-002-app-reviews"
 
@@ -36,7 +37,12 @@ def main() -> int:
 
     client = ApifyClient(token)
     print(f"Starting {ACTOR_ID} for {len(run_input['apps'])} app(s)/extension(s)...")
-    run = client.actor(ACTOR_ID).call(run_input=run_input)
+    try:
+        # apify-client 3.x returns a typed Run object (run.status); 2.x returned a dict (run["status"]).
+        run = client.actor(ACTOR_ID).call(run_input=run_input)
+    except ApifyApiError as exc:
+        print(f"Apify API error: {exc}", file=sys.stderr)
+        return 1
     if run is None:
         print("The run did not return any information.", file=sys.stderr)
         return 1
